@@ -30,7 +30,7 @@ namespace MarketList
 
         private void CategoryButton_Clicked(object sender, EventArgs e)
         {
-            Button btn = sender as Button;
+            Button btn = sender; 
             Shell.Current.GoToAsync($"CategoryList?CategoryName={btn.Text}");
          
         }
